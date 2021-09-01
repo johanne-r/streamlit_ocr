@@ -30,7 +30,7 @@ def page2():
     if click:
         for i in range(12):
             img_id = np.random.choice(list_img_id,1)
-            img1 = Image.open(path_images + '/' + img_id + '.png')
+            img1 = Image.open(path_images + '/' + img_id[0] + '.png')
             list_img.append(img1)
 
         st.image(list_img, width = 90)
