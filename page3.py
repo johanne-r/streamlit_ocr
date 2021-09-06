@@ -53,7 +53,7 @@ def page3():
 
     choix_modele = st.selectbox("Choisissez votre modèle", options = ["LeNet", "Détection d'objet"])
 
-    add_selectbox = st.selectbox("Choisissez une image dans la galerie", ("a01-000u-00-00","a01-000u-00-02","a01-000u-04-02","b01-136-07-00","p03-023-02-02","g01-043-07-02","l04-071-00-04","a01-000u-01-01","a01-000u-02-03","a01-000x-00-06","r06-137-10-00"))
+    add_selectbox = st.selectbox("Choisissez une image dans la galerie", sorted(["a01-000u-00-00","a01-000u-00-02","a01-000u-04-02","b01-136-07-00","p03-023-02-02","g01-043-07-02","l04-071-00-04","a01-000u-01-01","a01-000u-02-03","a01-000x-00-06","r06-137-10-00"]))
     img_id = add_selectbox
 
 
